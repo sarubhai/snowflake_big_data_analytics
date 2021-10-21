@@ -65,7 +65,9 @@ export SNOWFLAKE_PASSWORD='SnowflakePassword'
 
 #### Task Exec Role
 
+```
 use role accountadmin;
 create role task_exec;
 grant execute task on account to role task_exec;
 grant role task_exec to role sysadmin;
+```
